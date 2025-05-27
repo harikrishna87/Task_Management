@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:5001/api";
+const API_URL = "https://task-management-hux5.onrender.com/api";
 
 export const getTasks = () => axios.get(`${API_URL}/tasks`);
 export const createTask = (taskData) => axios.post(`${API_URL}/tasks`, taskData);
