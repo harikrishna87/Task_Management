@@ -1,5 +1,5 @@
 const TimeEntry = require('../models/TimeEntry');
-const Task = require('../models/Task'); // To validate task existence
+const Task = require('../models/Task');
 
 exports.createTimeEntry = async (req, res) => {
   try {
@@ -26,7 +26,6 @@ exports.getTimeEntriesForTask = async (req, res) => {
   }
 };
 
-// Add update and delete for time entries if needed
 exports.updateTimeEntry = async (req, res) => {
     try {
         const { startTime, endTime, notes } = req.body;

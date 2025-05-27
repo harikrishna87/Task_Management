@@ -225,7 +225,6 @@ const AppContent = () => {
 
   return (
     <Layout style={layoutStyle}>
-      {/* Desktop Sidebar */}
       {!isMobile && (
         <Sider
           breakpoint="lg"
@@ -235,8 +234,6 @@ const AppContent = () => {
           <SidebarContent />
         </Sider>
       )}
-
-      {/* Mobile Drawer */}
       <Drawer
         title={null}
         placement="left"

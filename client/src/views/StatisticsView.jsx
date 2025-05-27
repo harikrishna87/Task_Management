@@ -10,7 +10,6 @@ const StatisticsView = ({ isDarkMode = false }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Theme colors
   const theme = {
     background: 'transparent',
     cardBackground: 'transparent',
