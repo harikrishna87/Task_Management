@@ -1,0 +1,33 @@
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ant-layout, .ant-layout-sider, .ant-layout-header, .ant-layout-content, .ant-layout-footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ant-card-hoverable {
+  transition: box-shadow .3s, border-color .3s;
+}
+.ant-card-hoverable:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.list-item-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.site-layout-content {
+  min-height: calc(100vh - 64px - 70px);
+  padding: 24px;
+  background: #fff;
+}
+
+body[data-theme="dark"] .site-layout-content {
+}
